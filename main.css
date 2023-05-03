@@ -1,0 +1,145 @@
+*{
+
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --main-color : #031836;
+    --btn-color : #00abcc;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-color);
+    min-height: calc(100vh - 50px);
+    margin:  auto ;
+    padding: 50px 15px 15px;
+    border-radius: 5px;
+}
+
+.vinput {
+    position: relative;
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    margin: 30px auto;
+}
+.vinput1 {
+    position: relative;
+    display: flex;
+    border-radius: 15px;
+    margin: 20px auto;
+    padding: 5px;
+}
+
+.vinput1::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.1;
+    user-select: none;
+    border-radius: 15px;
+}
+
+.vinput input{
+    font-size: 27px;
+    width: 400px;
+    height: 40px;
+    outline: none;
+    margin: 5px ;
+    margin-right: 0px;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    background-color: transparent;
+    z-index: 1;
+    caret-color: var(--btn-color);
+}
+.vinput1 input{
+    font-size: 22px;
+    width: 150px;
+    height: 40px;
+    outline: none;
+    margin: 5px ;
+    margin-right: 0px;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    background-color: transparent;
+    z-index: 1;
+    caret-color: var(--btn-color);
+    color: white;
+}
+
+.vinput .btn {
+    font-weight: 500;
+    width: 120px;
+    color: white;
+    text-align: center;
+    margin: 0px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    background-color: var(--btn-color);
+    user-select: none;
+    z-index: 2;
+    font-size : 19px;
+}
+.percentage {
+    margin: 20px auto;
+    min-width: 350px;
+    color : #bbe1fa;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+label {
+  display: block;
+  align-self: center;
+  color: var(--btn-color);
+  font-weight:600;
+}
+
+
+.footer {
+    margin: 10px auto;
+    text-align: center;
+    max-width: fit-content;
+}
+.footer span {
+    color: blue;
+    font-weight: 600;
+}
+
+@media (max-width: 600px) {
+    .vinput input {
+        width: 240px;
+    };
+    .vinput .btn {
+        width: 35px;
+    };
+    .video {
+        width : 310px;
+        margin: 10px auto;
+    };
+};
