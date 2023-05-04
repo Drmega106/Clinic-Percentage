@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinic Percentage</title>
+    <link rel="shortcut icon" href="android-chrome-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body onload="counters()">
+    <div class="container">
+       
+        <div class="vinput1">
+            <label for="Units">Units Count :</label>
+            <input id="units" type="number" name="number of units" placeholder="units...">
+        </div> 
+        <div class="vinput1">
+            <label for="unitcost">One Unit Cost :</label>
+            <input id="unitcost" type="number" name="unitcost" placeholder="180">
+        </div>
+        
+        <div class="vinput1">
+            <label for="Day">Daily trim :</label>
+            <input id="Day" type="number" name="Daily trim" placeholder="Daily earnings">
+        </div> 
+        
+         <div class="vinput">
+            <input id="total" type="number" name="Total" placeholder="Total income...">
+            <button id="btn" class="btn" >Calculate 40% </button>
+        </div>
+        
+        <div class="percentage">
+            <div id="percentagebox" class="percentagebox"></div>
+            <div id="myportion" class="myportion"></div>
+            <div id="Daybyday">
+              <table id="table" class="table">
+                <tr>
+                  <th>Day</th>
+                  <th>total</th>
+                  <th>trimed</th>
+                </tr>
+              </table>
+            </div>
+            <div class="overall" id="overall">
+                <div class="overalltotal" id="overalltotal">total:</div>
+                <div class="overallportion" id="overallportion">total portion:</div>
+                <div class="trimed" id="trimed">trimed:</div>
+                <div class="crowns" id="crowns">Crowns:</div>
+            </div>
+            <div class="cleardiv">
+              <button id="clear" class="clear">Clear Data</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        Powered by: <span>MeGa</span>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
