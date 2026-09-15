@@ -17,7 +17,7 @@ function counters() {
   myportion();
 };
 btn.addEventListener("click", function() { 
-  if (totalnum.value & Daily.value) {
+  if (totalnum.value & Daily.value or Daily.value=0) {
     Calculate();
   } else {
     alert("pleaae insert valid value!")
